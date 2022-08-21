@@ -28,5 +28,7 @@ function selectButton(element) {
 
   document.getElementById("selected-player-list").innerText = playerLegnth;
   selectedPlayerBody(playerArray);
+  element.setAttribute("disabled", "");
+  element.style.backgroundColor = "red";
 }
 // Select Player Code End Here
