@@ -16,6 +16,7 @@ function selectedPlayerBody(selectedPlayer) {
     selectedPlayers.appendChild(tr);
   }
 }
+
 function selectButton(element) {
   const playerName = element.parentNode.parentNode.children[0].innerText;
   //   const btnSelect =
@@ -26,10 +27,6 @@ function selectButton(element) {
   const playerLegnth = playerArray.length;
 
   document.getElementById("selected-player-list").innerText = playerLegnth;
-
-  if (playerLegnth <= 5) {
-    selectedPlayerBody(playerArray);
-  } else {
-  }
+  selectedPlayerBody(playerArray);
 }
 // Select Player Code End Here
