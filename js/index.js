@@ -7,6 +7,10 @@ function selectedPlayerBody(selectedPlayer) {
   for (let i = 0; i < selectedPlayer.length; i++) {
     const playerName = playerArray[i].playerName;
 
+    // if (selectedPlayer.length < 6) {
+
+    // }
+
     const tr = document.createElement("tr");
     tr.innerHTML = `
      <th>${i + 1}</th>
@@ -27,8 +31,14 @@ function selectButton(element) {
   const playerLegnth = playerArray.length;
 
   document.getElementById("selected-player-list").innerText = playerLegnth;
-  selectedPlayerBody(playerArray);
-  element.setAttribute("disabled", "");
-  element.style.backgroundColor = "red";
+  if (playerArray.length < 6) {
+    selectedPlayerBody(playerArray);
+    element.setAttribute("disabled", "");
+    element.style.backgroundColor = "red";
+  } else {
+    let allCard = document.getElementsByClassName("card-button");
+    allCard.setAttribute("disabled", "");
+    allCard.style.backgroundColor = "red";
+  }
 }
 // Select Player Code End Here
