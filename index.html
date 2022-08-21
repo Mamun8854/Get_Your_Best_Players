@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Your Best</title>
+    <link rel="shortcut icon" href="images/fav-icon.jpg" type="image/x-icon" />
+
+    <!-- Tailwind And DaisyUI linking Here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section id="header-section">
+        <div id="header-image">
+          <div id="header-text">
+            <h1 class="text-5xl font-bold text-center">Select Your Best</h1>
+            <p class="text-#bfab79 font-semibold">
+              Bangladesh's first official foray into international cricket came
+              in the 1979 ICC Trophy in England. On 31 March 1986, Bangladesh
+              played its first ODI match, against Pakistan in the Asia Cup. For
+              a long time, football was the most popular sport in Bangladesh,
+              but cricket gradually became very popular – particularly in urban
+              areas – and by the late 1990s had surpassed football.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- player section  -->
+      <section class="flex w-9/12 mx-auto gap-4 mt-12">
+        <!-- players -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- player-01  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/liton.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Liton Das</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p1"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-02  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/masrafi.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Mashrafi Bin Murtaja</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p2"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-03  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/musfiq.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Mushfiq Ur Rahim</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p3"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-04  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/sabbir.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Sabbir Hasan</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p4"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-05  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/sakib.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shakib AL Hasan</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p5"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-06  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/tamim.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Tamim Iqbal</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p6"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-07  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/taskin.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Taskin Ahmed</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p7"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- player-08 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="h-40 w-full" src="images/riad" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Mahmudullah Riad</h2>
+
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-p8"
+                  class="px-8 py-2 bg-sky-600 text-white font-medium rounded"
+                  onclick="selectButton(this)"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-4 w-80 sticky top-0">
+          <!-- selected player list -->
+          <div class="h-2/4">
+            <h1
+              class="text-white text-4xl font-medium text-center mb-2 bg-red-900 py-2 rounded"
+            >
+              Selected
+              <span class="text-blue-400" id="selected-player-list">0</span>
+            </h1>
+            <div class="overflow-x-auto">
+              <table class="table w-full">
+                <thead>
+                  <tr>
+                    <th>SL No.</th>
+                    <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody id="selected-players"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Budget Calculation Section  -->
+          <div class="">
+            <h1
+              class="text-4xl font-medium text-white text-center mb-4 bg-red-900 py-2 rounded"
+            >
+              Budget
+            </h1>
+            <!-- player expense  -->
+            <div class="text-center">
+              <h2 class="font-medium">
+                Per Player :
+                <input id="" class="w-24 rounded-lg" type="text" name="" />
+              </h2>
+              <button
+                id="btn-calculate"
+                class="bg-sky-600 text-white font-medium px-4 py-2 rounded-lg mt-4"
+              >
+                Calculate
+              </button>
+              <h2 class="mt-4">
+                Player Expense :<span id="total-expense-player"></span>
+              </h2>
+            </div>
+            <!-- total expense  -->
+            <div class="text-center">
+              <h2 class="mt-4">
+                Manager :
+                <input id="" class="w-24 rounded-lg" type="text" name="" />
+              </h2>
+              <h2 class="mt-4">
+                Coach :
+                <input id="" class="w-24 rounded-lg" type="text" name="" />
+              </h2>
+              <button
+                id="btn-calculate-total"
+                class="bg-sky-600 text-white font-medium px-4 py-2 rounded-lg mt-4"
+              >
+                Calculate Total
+              </button>
+              <h2 class="mt-4">
+                Total Expense :<span id="total-expense-player"></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div></div>
+    </footer>
+
+    <!-- JavaScript File Linking Here  -->
+    <script src="js/utility.js"></script>
+    <script src="js/player-add.js"></script>
+    <script src="js/calculate.js"></script>
+  </body>
+</html>
