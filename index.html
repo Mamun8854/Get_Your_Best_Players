@@ -22,8 +22,10 @@
       <section id="header-section">
         <div id="header-image">
           <div id="header-text">
-            <h1 class="text-5xl font-bold text-center">Select Your Best</h1>
-            <p class="text-#bfab79 font-semibold">
+            <h1 class="text-5xl font-bold text-center text-amber-600">
+              Select Your Best
+            </h1>
+            <p class="text-white font-semibold leading-7 px-12 mt-12">
               Bangladesh's first official foray into international cricket came
               in the 1979 ICC Trophy in England. On 31 March 1986, Bangladesh
               played its first ODI match, against Pakistan in the Asia Cup. For
@@ -200,7 +202,7 @@
               class="text-white text-4xl font-medium text-center mb-2 bg-red-900 py-2 rounded"
             >
               Selected
-              <span class="text-blue-400" id="selected-player-list">0</span>
+              <span class="text-blue-400" id="selected-player-list"></span>
             </h1>
             <div class="overflow-x-auto">
               <table class="table w-full">
@@ -249,7 +251,7 @@
                 Manager :
                 <input
                   id="manager-cost"
-                  class="w-24 rounded-lg"
+                  class="w-24 rounded-lg text-black"
                   type="text"
                   name=""
                 />
@@ -258,7 +260,7 @@
                 Coach :
                 <input
                   id="coach-cost"
-                  class="w-24 rounded-lg"
+                  class="w-24 rounded-lg text-black"
                   type="text"
                   name=""
                 />
@@ -270,7 +272,7 @@
                 Calculate Total
               </button>
               <h2 class="mt-4">
-                Total Expense :<span id="total-expense-player"></span>
+                Total Expense :<span id="final-total-expense-player"></span>
               </h2>
             </div>
           </div>
@@ -282,6 +284,7 @@
     </footer>
 
     <!-- JavaScript File Linking Here  -->
-    <script src="js/index.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/calculation.js"></script>
   </body>
 </html>
