@@ -1,4 +1,4 @@
-// Select Player Code start Here
+// Select Player Code start Here ---->Using Onclick Function<----
 let playerArray = [];
 
 function selectButton(element) {
@@ -25,13 +25,13 @@ function selectButton(element) {
   }
 }
 
-// total player Cost start
+// total player Cost start --->using addEventListener<----
 document.getElementById("btn-calculate").addEventListener("click", function () {
   totalPlayerCost();
 });
 // total player Cost end
 
-// final total cost start
+// final total cost start --->using addEventListener<----
 document
   .getElementById("btn-calculate-total")
   .addEventListener("click", function () {

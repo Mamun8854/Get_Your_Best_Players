@@ -34,6 +34,7 @@ function totalPlayerCost() {
     playerCostField.innerText = totalPlayerExpense;
   }
 }
+// Final Total cost code function Here
 function finalTotalCost() {
   const playerCostField = document.getElementById("total-expense-player");
   const playerCost = parseFloat(playerCostField.innerText);
