@@ -22,27 +22,34 @@ function totalPlayerCost() {
   const perPlayerCostString = perPlayerCostField.value;
   const perPlayerCost = parseFloat(perPlayerCostString);
 
-  let number = document.getElementById("selected-player-list");
-  let numberString = number.innerText;
-  let numbers = parseInt(numberString);
+  if (isNaN(perPlayerCost)) {
+    alert("Please Enter Valid Type Input Value");
+  } else {
+    let number = document.getElementById("selected-player-list");
+    let numberString = number.innerText;
+    let numbers = parseInt(numberString);
+    const totalPlayerExpense = perPlayerCost * numbers;
 
-  const totalPlayerExpense = perPlayerCost * numbers;
-
-  const playerCostField = document.getElementById("total-expense-player");
-  playerCostField.innerText = totalPlayerExpense;
+    const playerCostField = document.getElementById("total-expense-player");
+    playerCostField.innerText = totalPlayerExpense;
+  }
 }
 function finalTotalCost() {
   const playerCostField = document.getElementById("total-expense-player");
   const playerCost = parseFloat(playerCostField.innerText);
-
   const managerCostField = document.getElementById("manager-cost");
   const managerCost = parseFloat(managerCostField.value);
 
   const coachCostField = document.getElementById("coach-cost");
   const coachCost = parseFloat(coachCostField.value);
+  if (isNaN(managerCost && coachCost)) {
+    alert("Please Enter Valid Type Input Value");
+  } else {
+    const finalTotalCost = playerCost + managerCost + coachCost;
 
-  const finalTotalCost = playerCost + managerCost + coachCost;
-
-  const totalFinalCost = document.getElementById("final-total-expense-player");
-  totalFinalCost.innerText = finalTotalCost;
+    const totalFinalCost = document.getElementById(
+      "final-total-expense-player"
+    );
+    totalFinalCost.innerText = finalTotalCost;
+  }
 }
