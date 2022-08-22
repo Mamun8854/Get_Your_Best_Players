@@ -30,15 +30,16 @@ function selectButton(element) {
   playerArray.push(playerObject);
   const playerLegnth = playerArray.length;
 
-  document.getElementById("selected-player-list").innerText = playerLegnth;
   if (playerArray.length < 6) {
+    document.getElementById("selected-player-list").innerText = playerLegnth;
     selectedPlayerBody(playerArray);
     element.setAttribute("disabled", "");
     element.style.backgroundColor = "red";
   } else {
-    let allCard = document.getElementsByClassName("card-button");
-    allCard.setAttribute("disabled", "");
-    allCard.style.backgroundColor = "red";
+    alert("maximum 5 player you can add in your list");
+    // let allCard = document.querySelector(".card-button");
+    // allCard.setAttribute("disabled", "");
+    // allCard.style.backgroundColor = "red";
   }
 }
 // Select Player Code End Here
