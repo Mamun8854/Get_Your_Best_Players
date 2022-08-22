@@ -47,3 +47,19 @@ function selectButton(element) {
 // Select Player Code End Here
 
 // Calculation Code Satart Herer
+function totalPlayerCost() {
+  const totalPlayerExpense = document.getElementById("total-expense-player");
+  const totalPlayerExpenseString = totalPlayerExpense.innerText;
+  const totalCost = parseFloat(totalPlayerExpenseString);
+  console.log(totalCost);
+}
+
+document.getElementById("btn-calculate").addEventListener("click", function () {
+  const perPlayerCostField = document.getElementById("per-player-cost-field");
+  const perPlayerCostString = perPlayerCostField.value;
+  const perPlayerCost = parseFloat(perPlayerCostString);
+
+  const totalPlayerExpense = perPlayerCost * playerArray.length;
+  const playerCostField = document.getElementById("total-expense-player");
+  playerCostField.innerText = totalPlayerExpense;
+});
